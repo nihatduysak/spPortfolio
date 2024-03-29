@@ -1,0 +1,447 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.homeBtn {
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+    user-select: none;
+
+    span {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px;
+        position: relative;
+        width: 25px;
+        text-align: center;
+
+        transition: all 0.4s cubic-bezier(0.85, 0, 0.15, 1);
+
+        &:nth-child(1) { z-index: 1; }
+        &:nth-child(2) { transform: translateX(-28px); }
+        &:nth-child(3) { transform: translateX(-56px); }
+        &:nth-child(4) { transform: translateX(-84px); }
+        &:nth-child(5) { transform: translateX(-112px); }
+    }
+
+    &:hover span {
+        transform: translateX(0);
+    }
+}
+
+.consultant {
+    background-color: #000;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    & a {
+        color: #FFF;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+}
+
+.consultant:hover {
+    background-color: #EB7565;
+}
+
+.container {
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+
+    & h1 {
+        margin-bottom: 20px;
+
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-basis: auto;
+}
+
+.UIUX-Apps-Illustrations {
+    display: flex;
+    flex-direction: column;
+}
+
+.UXUI {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 20px;
+    color: #FFF;
+}
+
+.graphicDesign {
+    background-color: #755CDE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    padding: 24px;
+
+    & img {
+        align-self: flex-end;
+        margin-bottom: 20px;
+        margin-bottom: 94px;
+    }
+}
+
+.UIUX {
+    background-color: #F6A560;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 50%;
+
+    & img {
+        align-self: flex-end;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+}
+
+.apps {
+    background-color: #F39E9E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 50%;
+
+    & img {
+        align-self: flex-end;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+}
+
+.illustration {
+    background-color: #EB7565;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: #FFF;
+
+    & img {
+        align-self: flex-end;
+        margin-bottom: 42px;
+    }
+}
+
+.photography {
+    background-color: #61C4B7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: #FFF;
+
+    & img {
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+}
+
+.motionGraphics {
+    background-color: #552049;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: #FFF;
+
+    & img {
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+
+    & h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0px;
+    }
+}
+
+.photo-motiongraphics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+.bioInfo { margin-bottom: 100px;}
+
+.bioImg {
+    padding: 20px;
+    margin-bottom: 40px;
+    
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.bioDescription {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+
+    & h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #7A746E;
+    }
+
+    & a {
+        display: inline-block;
+        background-color: #EB7565;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: #FFF;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+
+    & a:hover {
+        background-color: #F6A560;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+
+    & h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0px;
+    }
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.sliderBtn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    & a {
+        background-color: #000;
+        padding: 14px 18px;
+        border-radius: 30px;
+    }
+
+    & a:hover {
+        background-color: #755CDE;
+    }
+}
+
+.interview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 48px 24px;
+    background-color: #000;
+    color: #FFF7F0;
+    border-radius: 15px;
+
+    & h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0px;
+        margin-bottom: 24px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        margin-bottom: 24px;
+    }
+
+    & a {
+        background-color: #EB7565;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: #FFF;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+
+    & a:hover {
+        background-color: #F6A560;
+    }
+}
+
+@media (width > 767px) {
+    
+  }
+
+  /* --- DESKTOP START --- */
+
+@media (width > 1279px) {
+
+    .header {
+        padding: 34px 165px;
+        align-items: center;
+    }
+    .homeBtn {
+        gap: 3px;
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .skills {
+        padding: 34px 165px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .bioInfo {
+        display: flex;
+        gap: 128px;
+        padding: 0 165px;
+        margin-bottom: 20px;
+    }
+
+    .bioDescription {
+        width: 80%;
+    }
+
+    /* .projects {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & img {
+            border-radius: 15px;
+        }
+    }
+
+    .slider {
+        display: flex;
+        gap: 20px;
+    } */
+
+    .sliderBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        & a {
+            padding: 14px 18px;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .graphicDesign {
+        width: 33%;
+    }
+
+    .UIUX-Apps-Illustrations {
+        width: 33%;
+    }
+
+    .photo-motiongraphics {
+        width: 33%;
+    }
+
+    .meetMe {
+        padding: 48px 165px;
+    }
+
+    .interview {
+        margin: 0 auto;
+        padding: 80px 65px;
+        flex-direction: row;
+        text-align: left;
+        gap: 90px;
+    }
+
+    .interviewDesc {
+        width: 60%;
+    }
+
+    .consultation {
+        display: flex;
+        align-items: center;
+    }
+}
